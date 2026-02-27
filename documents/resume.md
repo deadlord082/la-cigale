@@ -1,0 +1,7 @@
+Voici une synthèse du positionnement de la brasserie La Cigale à Nantes, structurée pour orienter vos décisions de design :
+
+Synthèse de l’Identité et du Positionnement : La Cigale (Nantes)
+
+Inaugurée en 1895 sur la place Graslin et classée Monument Historique en 1964, La Cigale est une institution de l'Art Nouveau mondialement reconnue. Son décor foisonnant, œuvre d’Émile Libaudière, mêle céramiques émaillées, mosaïques et sculptures. Son statut dépasse la simple restauration pour devenir un emblème culturel, immortalisé par le cinéma (Jacques Demy) et fréquenté par les surréalistes.
+
+Elle adopte un positionnement de "Brasserie de Luxe démocratique", ouverte 7j/7 du petit-déjeuner au souper tardif. Sa clientèle est hybride : touristes en quête d’un lieu "instagrammable", hommes d’affaires, et locaux fidèles pour le salon de thé ou l'après-spectacle. La promesse de marque réside dans l'expérience immersive : "savourer le temps qui passe" dans un cadre d'exception. Face à des concurrents plus modernes (Brasserie Félix, Le 1), La Cigale se distingue par son authenticité patrimoniale et son rôle de gardienne de la tradition (fruits de mer, tartares). Visuellement, l'identité est saturée par des tons bleus, or et bruns, une typographie Belle Époque et une ambiance "effervescente" où le décor est aussi important que l'assiette.

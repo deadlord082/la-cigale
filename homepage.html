@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>La Cigale - Art Nouveau Elegance</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "accent-gold": "#c5a059",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-effect {
+            background: rgba(16, 22, 34, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <!-- Navigation -->
+        <header class="fixed top-0 z-50 w-full glass-effect border-b border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-accent-gold text-3xl">restaurant</span>
+                    <h1 class="font-serif text-2xl font-bold tracking-tight text-white">La Cigale</h1>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-medium uppercase tracking-widest hover:text-accent-gold transition-colors"
+                        href="#">La Brasserie</a>
+                    <a class="text-sm font-medium uppercase tracking-widest hover:text-accent-gold transition-colors"
+                        href="#">Le Menu</a>
+                    <a class="text-sm font-medium uppercase tracking-widest hover:text-accent-gold transition-colors"
+                        href="#">Héritage</a>
+                    <a class="text-sm font-medium uppercase tracking-widest hover:text-accent-gold transition-colors"
+                        href="#">Contact</a>
+                </nav>
+                <div class="flex items-center gap-6">
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-white px-8 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all uppercase">
+                        Réserver
+                    </button>
+                    <span
+                        class="material-symbols-outlined cursor-pointer hover:text-accent-gold transition-colors">menu</span>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="relative h-screen flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center"
+                    data-alt="Intricate Art Nouveau golden mosaics and ceiling detail"
+                    style="background-image: linear-gradient(to bottom, rgba(16, 22, 34, 0.4), rgba(16, 22, 34, 0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPwkpY8F2CBbLpU05B6EiAtvh6Lo0Qd5pE3hP5dmiDRUkeHDtiPGcuE83lrm9wg2mNpaW3NdRhVS2bGgx6YYpvkDnorryqbnqaeZ7aV5BNcbjb6_H5yGswgReoycGID5_pPyrKpKfGCPxf1c5cuXRuUS4vCVhKqSMvC_kUQNxyJ_xJceBNUddit9CSR0uzl7pzFBs0cb2LUDw6eL2fdbLHrCg7sDXM-BMgYAehPJbyDqKO7ih043TRpqMZtOh1iVVY1qPYQ1S4I9CX');">
+                </div>
+                <div class="relative z-10 text-center max-w-4xl px-6">
+                    <p class="text-accent-gold uppercase tracking-[0.4em] mb-6 text-sm font-semibold">Nantes • Depuis
+                        1895</p>
+                    <h2 class="font-serif text-6xl md:text-8xl text-white mb-8 leading-tight">L'Art de vivre <br /><span
+                            class="italic font-normal">en héritage</span></h2>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-12">
+                        <button
+                            class="bg-white text-background-dark px-10 py-4 rounded-lg font-bold text-lg hover:bg-accent-gold hover:text-white transition-all">
+                            Réserver une table
+                        </button>
+                        <button
+                            class="border border-white/30 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-all backdrop-blur-sm">
+                            Découvrir la carte
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                    <span class="material-symbols-outlined text-white/50 text-3xl">keyboard_double_arrow_down</span>
+                </div>
+            </section>
+            <!-- Booking Bar -->
+            <section class="max-w-6xl mx-auto -mt-16 relative z-30 px-6">
+                <div
+                    class="bg-slate-900 border border-slate-800 rounded-xl shadow-2xl p-6 grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                    <div class="flex flex-col gap-1.5 border-r border-slate-800 pr-4">
+                        <label class="text-[10px] uppercase tracking-widest text-accent-gold font-bold">Date</label>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-slate-400">calendar_today</span>
+                            <select
+                                class="bg-transparent border-none text-white focus:ring-0 p-0 text-sm font-medium w-full">
+                                <option>Aujourd'hui, 24 Mai</option>
+                                <option>Demain, 25 Mai</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1.5 border-r border-slate-800 pr-4">
+                        <label class="text-[10px] uppercase tracking-widest text-accent-gold font-bold">Heure</label>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-slate-400">schedule</span>
+                            <select
+                                class="bg-transparent border-none text-white focus:ring-0 p-0 text-sm font-medium w-full">
+                                <option>19:30</option>
+                                <option>20:00</option>
+                                <option>20:30</option>
+                                <option>21:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1.5 border-r border-slate-800 pr-4">
+                        <label class="text-[10px] uppercase tracking-widest text-accent-gold font-bold">Convives</label>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-slate-400">group</span>
+                            <select
+                                class="bg-transparent border-none text-white focus:ring-0 p-0 text-sm font-medium w-full">
+                                <option>2 Personnes</option>
+                                <option>3 Personnes</option>
+                                <option>4 Personnes</option>
+                                <option>Groupe (5+)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-white h-14 rounded-lg font-bold transition-all flex items-center justify-center gap-2">
+                        Vérifier la disponibilité
+                    </button>
+                </div>
+            </section>
+            <!-- Heritage Section -->
+            <section class="py-32 px-6 max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                    <div class="lg:col-span-5 order-2 lg:order-1">
+                        <p class="text-accent-gold font-bold tracking-[0.2em] mb-4 text-sm uppercase">Patrimoine
+                            Historique</p>
+                        <h2 class="font-serif text-5xl text-white mb-8 leading-tight">Une traversée du temps au cœur de
+                            Nantes</h2>
+                        <div class="space-y-6 text-slate-400 leading-relaxed text-lg">
+                            <p>Inaugurée en 1895, La Cigale est bien plus qu'une brasserie. C'est un chef-d'œuvre
+                                architectural classé Monument Historique, où chaque mosaïque raconte une histoire.</p>
+                            <p>Le décor éblouissant d'Émile Libaudière a servi de muse au cinéaste Jacques Demy, qui y
+                                filma son chef-d'œuvre <span class="italic text-white">Lola</span> en 1961, ancrant
+                                définitivement l'établissement dans la légende du septième art.</p>
+                        </div>
+                        <div class="mt-10">
+                            <a class="inline-flex items-center gap-2 text-accent-gold font-bold hover:gap-4 transition-all"
+                                href="#">
+                                Découvrir notre histoire <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 order-1 lg:order-2 grid grid-cols-12 gap-4">
+                        <div class="col-span-8 rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">
+                            <img alt="" class="w-full h-full object-cover"
+                                data-alt="Classic French brasserie interior with ornate mirrors and wood"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0x4vYu8MyLP83Jaq0_lt53wNnqMpXI48zzW3k1oop7HaOYaD4DsOOu9n9ViCqzySZibrr5tCJYj694STCWXy3l8ZKxEhGvG_U7E7LtZuA_l7GRzXlSAUcngtXHVT8yhGeGtUmPdAi3FrDDv5IcTuSOZceB4CKw2CQq-KfqSqouerN9E0URZU-8Cqx9XaQA6M-ijkIYbQ654zYmafbRCp1thgOd3FjWwLAyFXEojkXtovuJJoQe0aseoGK5MoZFTEy_9Ay0jLuK8hW" />
+                        </div>
+                        <div class="col-span-4 flex flex-col gap-4">
+                            <div class="rounded-2xl overflow-hidden aspect-square shadow-xl bg-primary/20">
+                                <img alt="" class="w-full h-full object-cover opacity-80"
+                                    data-alt="Close up of vintage crystal champagne glasses"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0J_jvURZVPb1RO7mUPsoYe9oweUwQCE7wArqAWDWWSl2jnBFent7xHj0ckufIAQTVeTKKYiKk8YOq-01qZDrDqwPP55L_zM0OJmh0kG6q4cML8mK1czmJdDby1yIHD27pOtnfPP8uddsGS5xCA9yEjKGSiIZc1cJzdCew79JBCrAyYqP1aLuPWnIvEKrVT9cbVwafZ-F88l27TBTrMpwZ6y-AWuJuF5WxnQpw56NnOJyqo1OrrqIgjz7Tw62Zr5j_gA83owzQ0d9A" />
+                            </div>
+                            <div
+                                class="rounded-2xl overflow-hidden flex-grow bg-accent-gold/20 flex items-center justify-center p-6 border border-accent-gold/30">
+                                <p class="font-serif italic text-xl text-center text-accent-gold">"La plus belle
+                                    brasserie du monde."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Menu Grid -->
+            <section class="bg-slate-900/50 py-32">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="text-center mb-20">
+                        <h2 class="font-serif text-5xl text-white mb-4">Nos Univers Gastronomiques</h2>
+                        <div class="h-px w-24 bg-accent-gold mx-auto"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                        <div class="group cursor-pointer">
+                            <div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
+                                <div
+                                    class="absolute inset-0 bg-background-dark/20 group-hover:bg-background-dark/0 transition-all">
+                                </div>
+                                <img alt=""
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Fresh oysters and seafood platter on ice"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDibp4xnMbtXpIY1Q_62To33Z9VVxhIAZDWnJLmeY2X5cUPyrkpFulmR5n5gftgABvbus5U-93tXYqZR--XPdClWg7YJ7KURl7g2TA955p74dFXMA0zAXO0HRnpoH-TFWrwEi2LzIIz722EADQF6qJkyUnRR5nXUysr9tiKrhBa2KQfaeyH8LRLl5uku0vd-m9P4-uZDWsZiraoxrIxN7qas7avIvR5EEGP4bIQ0RYeE2Klu3HuHkgEGGImzXP-68LPCaud2sXDw1E4" />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-8 translate-y-4 group-hover:translate-y-0 transition-transform">
+                                    <h3 class="font-serif text-3xl text-white mb-2">Banc de l'Écailler</h3>
+                                    <p class="text-slate-300 opacity-0 group-hover:opacity-100 transition-opacity">
+                                        Fruits de mer d'exception sélectionnés chaque matin.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group cursor-pointer">
+                            <div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
+                                <div
+                                    class="absolute inset-0 bg-background-dark/20 group-hover:bg-background-dark/0 transition-all">
+                                </div>
+                                <img alt=""
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Elegant roasted duck dish with garnish"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrUddw94ZTidsNlwzOmYct3Zvo6tbRoAFUHfL1RqvK67TeORUOqTcEQoBL24E5C1IxYdSahveMg46RXc-nikFdHlMuN3b6igdCvUTJUFslOK-_lzaAfjfjG8zTVIGqCUg_Jr2-lEXb9pG00W3XLNRayW-HJ5iPrrJOklAh3FuWcsfOCP-S2RLEJJ7Of0zd00-2-0K-yloafzLHvj1eE7ku2B3942UFM2NND3G2TqmQz2uMq3FITs-_upK84p4LCgK0HETQ8kFWmggc" />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-8 translate-y-4 group-hover:translate-y-0 transition-transform">
+                                    <h3 class="font-serif text-3xl text-white mb-2">Cuisine de Tradition</h3>
+                                    <p class="text-slate-300 opacity-0 group-hover:opacity-100 transition-opacity">Les
+                                        classiques de la gastronomie française revisités.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group cursor-pointer">
+                            <div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6">
+                                <div
+                                    class="absolute inset-0 bg-background-dark/20 group-hover:bg-background-dark/0 transition-all">
+                                </div>
+                                <img alt=""
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Exquisite French pastries and afternoon tea set"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_ZA0H_hswz6oyzfaRVMY-xkbFFL1uW-Dl3VuYEz4wPw24wzmJXyPAFyQrPwvHdE5ZtHTRielUET2T-q6TG76EvsVbfL81WaSdhbjFhiK01rhUIRzS6UAzxk_jT7JK-1Ui_DAgindUbD-rosenqAuKppO_2UMjcGMC1AE2bvurf2T37Ik_0J01_7ciae4EhpRbALqfhH5ij1dBKOvaeUdDmiEfMvcdcYkDr8WkCcbPfBVKTj6nZe_OTAsCdXFfHKoDGh4tweoWvRdG" />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-8 translate-y-4 group-hover:translate-y-0 transition-transform">
+                                    <h3 class="font-serif text-3xl text-white mb-2">Salon de Thé</h3>
+                                    <p class="text-slate-300 opacity-0 group-hover:opacity-100 transition-opacity">Une
+                                        parenthèse sucrée dans un cadre enchanteur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- AI Concierge Interactive Block -->
+            <section class="py-32 px-6">
+                <div class="max-w-5xl mx-auto">
+                    <div
+                        class="bg-gradient-to-br from-slate-900 to-primary/20 border border-slate-800 rounded-3xl p-12 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-64 h-64 bg-accent-gold/5 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full">
+                        </div>
+                        <div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+                            <div class="flex-grow">
+                                <div class="flex items-center gap-3 text-accent-gold mb-4">
+                                    <span class="material-symbols-outlined">auto_awesome</span>
+                                    <span class="text-xs font-bold uppercase tracking-widest">Conciergerie
+                                        Digitale</span>
+                                </div>
+                                <h2 class="font-serif text-4xl text-white mb-6">Personnalisez votre expérience</h2>
+                                <p class="text-slate-400 text-lg mb-8 leading-relaxed">Une demande particulière ?
+                                    Laissez-nous vous guider pour un accord mets &amp; vins ou l'organisation d'une
+                                    célébration sur-mesure.</p>
+                                <div class="flex flex-wrap gap-4">
+                                    <div
+                                        class="bg-slate-800/50 hover:bg-slate-800 px-6 py-3 rounded-full border border-slate-700 cursor-pointer transition-colors text-sm font-medium">
+                                        Suggestion de vins</div>
+                                    <div
+                                        class="bg-slate-800/50 hover:bg-slate-800 px-6 py-3 rounded-full border border-slate-700 cursor-pointer transition-colors text-sm font-medium">
+                                        Demande d'allergies</div>
+                                    <div
+                                        class="bg-slate-800/50 hover:bg-slate-800 px-6 py-3 rounded-full border border-slate-700 cursor-pointer transition-colors text-sm font-medium">
+                                        Privatisation Salon</div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-80 flex-shrink-0">
+                                <div class="bg-background-dark rounded-2xl p-6 border border-slate-800 shadow-xl">
+                                    <div class="flex items-center gap-4 mb-6">
+                                        <div class="size-10 rounded-full bg-primary flex items-center justify-center">
+                                            <span class="material-symbols-outlined text-white text-xl">smart_toy</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs text-slate-500 font-bold uppercase">Assistant</p>
+                                            <p class="text-sm font-medium text-white">Prêt à vous aider</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-4 mb-6">
+                                        <div class="bg-slate-800 rounded-lg p-3 text-xs leading-relaxed">Bonjour, je
+                                            peux vous aider à choisir une table ou vous conseiller sur nos vins de
+                                            Loire.</div>
+                                    </div>
+                                    <div class="relative">
+                                        <input
+                                            class="w-full bg-slate-900 border-slate-800 rounded-lg py-3 px-4 text-xs focus:ring-accent-gold focus:border-accent-gold transition-all"
+                                            placeholder="Posez votre question..." type="text" />
+                                        <button class="absolute right-3 top-1/2 -translate-y-1/2 text-accent-gold">
+                                            <span class="material-symbols-outlined text-xl">send</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-background-dark border-t border-slate-900 pt-20 pb-10">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="material-symbols-outlined text-accent-gold text-2xl">restaurant</span>
+                        <h3 class="font-serif text-xl font-bold text-white">La Cigale</h3>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Une institution nantaise où l'élégance de
+                        l'Art Nouveau rencontre la générosité de la gastronomie française.</p>
+                    <div class="flex gap-4">
+                        <a class="text-slate-500 hover:text-white transition-colors" href="#"><span
+                                class="material-symbols-outlined">public</span></a>
+                        <a class="text-slate-500 hover:text-white transition-colors" href="#"><span
+                                class="material-symbols-outlined">share</span></a>
+                        <a class="text-slate-500 hover:text-white transition-colors" href="#"><span
+                                class="material-symbols-outlined">mail</span></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Horaires</h4>
+                    <ul class="text-slate-500 text-sm space-y-4">
+                        <li class="flex justify-between"><span>Lundi - Dimanche</span> <span
+                                class="text-slate-300">07:30 — 00:30</span></li>
+                        <li class="flex justify-between"><span>Petit Déjeuner</span> <span class="text-slate-300">07:30
+                                — 11:30</span></li>
+                        <li class="flex justify-between"><span>Service Continu</span> <span class="text-slate-300">12:00
+                                — 00:00</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Navigation</h4>
+                    <ul class="text-slate-500 text-sm space-y-4">
+                        <li><a class="hover:text-accent-gold transition-colors" href="#">La Carte du Brasseur</a></li>
+                        <li><a class="hover:text-accent-gold transition-colors" href="#">Réservations Groupes</a></li>
+                        <li><a class="hover:text-accent-gold transition-colors" href="#">Boutique &amp; Cadeaux</a></li>
+                        <li><a class="hover:text-accent-gold transition-colors" href="#">Recrutement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Accès</h4>
+                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">4 Place Graslin, <br />44000 Nantes, France
+                    </p>
+                    <div class="h-32 rounded-lg overflow-hidden relative">
+                        <div class="absolute inset-0 bg-slate-800" data-location="Place Graslin, Nantes" style=""></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-accent-gold">location_on</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="max-w-7xl mx-auto px-6 pt-10 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-600 text-xs">© 2024 La Cigale Nantes. Tous droits réservés.</p>
+                <div class="flex gap-8 text-xs text-slate-600">
+                    <a class="hover:text-slate-400" href="#">Mentions Légales</a>
+                    <a class="hover:text-slate-400" href="#">Confidentialité</a>
+                    <a class="hover:text-slate-400" href="#">Cookies</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
